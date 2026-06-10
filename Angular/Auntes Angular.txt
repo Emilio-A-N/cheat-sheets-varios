@@ -1,0 +1,16 @@
+Elementos que necesitamos:
+ -Angular
+ -Node.js compatible con Angular
+ 
+Una vez instalado, vamos a VSCode y para crear proyecto usamos "ng new". Insertas nombre y eliges que estilo vas a necesitar. 
+Posteriormente se crea automaticamente toda la infraestructura de nuestro proyecto... Brutal, por cierto.
+
+Tenemos  que crear la carpeta Assets en SRC/Assets.
+
+En Angular.Json hay que buscar el apartado Assets y editar el input. Se tiene que apuntar a la direccion del SRC donde se ha creado, es decir "src/assets/"
+Se configura tambien añadiendo un: "output": "/assets/"
+
+Para crear y arrancar el servidor tenemos que poner "ng serve". Nos crea practicamente todo y nos da un localhost. Este será el unido index que tendremos en el proyecto.
+Tenemos tambien la carpeta creada de style.css.
+
+Nos proporciona el app-root
