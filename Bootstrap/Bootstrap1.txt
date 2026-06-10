@@ -1,0 +1,105 @@
+Introducción a Bootstrap. Framework de CSS.
+
+getBootstrap.com
+
+Hace nuestra pagina Responsive, haciendo que nuestra pagina se adapte en tamaño y posicion dependiendo del tamaño de la pantalla o si se edita la ventana.
+
+Recursos necesarios:
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+Para amoldar la web a las distintos tipos de pantalla se usan:
+
+	sm. Tamaño movil
+	md. Tamaño tablet
+	lg. Tamaño ordena estandar
+	
+Resaltamos el sistema de rejillas. Divide la pantalla en 12 columnas que permite distribuir los distintos elementos.
+También el uso de "componentes prefabricados" y atajos rápidos.
+	
+- Uno de los elementos mas usados es el Carousel. 
+Sin Bootstrap, conllevaria programar en js, mientras que con Boostrap, lo simplica con el siguiente codigo: 
+	
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+---   SON LAS DIAPOSITIVAS QUE TENDREMOS EN EL CARRUSEL   ---
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+---  BOTON QUE NOS LLEVA A LA IMAGEN ANTERIOR   ---
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>  
+---   BOTON QUE NOS LLEVA A LA SIGUIENTE IMAGEN   ---
+
+- Otro elemento que podemos destacar son las CARDS.
+Es un conjunto donde tenemos una imagen de cabecera, un texto y un boton. Se suelen usar como enlaces y en general, para cualquier cosa que contenga información.
+Lo podemos importar con el siguiente comando:
+
+	<div class="card" style="width: 18rem;">
+	  <img src="..." class="card-img-top" alt="...">
+	  <div class="card-body">
+		<h5 class="card-title">Card title</h5>
+		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		<a href="#" class="btn btn-primary">Go somewhere</a>
+	  </div>
+	</div>
+
+- Otro elemento que tenemos es el dropdown. 
+Menu desplegable que nos encontramos en paginas web
+
+	<div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+			Dropdown button
+		</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+	</div>
+	
+- Otro elemento que tenemos es el Spinner
+Elemento que muestra que esta cargando. Tipica linea redonda que da vueltas.
+
+	<div class="spinner-border" role="status">
+	  <span class="visually-hidden">Loading...</span>
+	</div>
+	
+- Otro elemento que tenemos es el Colapse
+Crea botones que hacen aparecer y desaparecer texto.
+
+	<p>
+	  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+		Link with href
+	  </a>
+	  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		Button with data-bs-target
+	  </button>
+	</p>
+	<div class="collapse" id="collapseExample">
+	  <div class="card card-body">
+		Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+	  </div>
+	</div>
+
+	
